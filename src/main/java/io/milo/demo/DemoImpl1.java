@@ -97,6 +97,10 @@ public class DemoImpl1 extends AbstractDemo implements Demo {
             add(users.get("serbia")[0].getId());
             add(users.get("spain")[1].getId());
         }});
+
+        this.client.vote(users.get("croatia")[0].getId(), new ArrayList<String>(){{
+            add(users.get("serbia")[0].getId());
+        }});
     }
 
     @Override
